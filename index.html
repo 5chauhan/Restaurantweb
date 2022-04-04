@@ -1,0 +1,116 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="style.css">
+<title>Responsive Website!</title>
+<h1 style="text-align: center; color: rgb(28, 4, 30); text-decoration: underline;">Flavour Restaurant</h1>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        <ul id="menu-list">
+          <li>
+            <a href="">Pizzas</a>
+          </li>
+          <li>
+            <a href="">Drinks</a>
+          </li>
+          <li>
+            <a href="">Mocktails</a>
+          </li>
+          <li>
+            <a href="">Desserts</a>
+          </li>
+          <li>
+            <a href="">Reservations</a>
+          </li>
+        </ul>
+      </nav>
+  <div class="top">
+    <header class="hero">
+      <h1> </h1>
+     
+    </header>
+    <div class="cta cta1">
+      <p class="price">550 Rs.</p>
+      <p>Pizza</p>
+    </div>
+    <div class="cta cta2">
+      <p class="price">350 RS.</p>
+      <p>Cold coffee</p>
+    </div>
+
+  </div>
+
+  <section class="features">
+    <div class="feature">
+       <span  class="icon"></span>
+       <h3>pizza</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+    <div class="feature">
+      <span class="icon"></span>
+      <h3>Drinks</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+    <div class="feature">
+      <span class="icon"></span>
+      <h3>Mocktails</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+    <div class="feature">
+      <span class="icon"></span>
+      <h3>Music</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <img src="pizza.jpg " style="height: 400px; width: 350px;" alt="Yummy Pzzas" class="about__mockup">
+    <div class="about__details" style="font-style: unset; color: rgb(192, 179, 185);">
+      <h2 style="text-decoration: underline;">Featured Pizzas </h2>
+      <p>Slim Profile, easy to hold and loaded with cheese.</p>
+      <p>This is the one you have been waiting for</p>
+      
+    </div>
+  </section>
+
+
+  <section class="gallery">
+    <h2>Glimpse</h2>
+    <img src="images/food2.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food1.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food3.jpg"style="width:200px; height=500px;" alt="">
+    <img src="images/food4.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food5.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food6.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food7.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food8.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food9.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food10.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food11.jpg"style="width:200px; height=200px;" alt="">
+    <img src="images/food12.jpg"style="width:200px; height=200px;" alt="">
+  </section>
+</div>
+
+<script>
+  const navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+</script>
+
+</body>
+
+</html>
